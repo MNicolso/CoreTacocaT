@@ -1,0 +1,35 @@
+﻿
+
+<h1>TacocaT</h1>
+
+<div class="row">
+    <div class="col">
+        <form asp-controller="home" asp-action="Solve">
+            <div class="row">
+                <div class="col">
+                    <input type="text" name='inputWord' />
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-dark"> Reverse Word </button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        Reversed word shows here:
+
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @ViewData["Result"] @ViewData["ResultTwo"] 
+
+
+
+    </div>
+</div>
+ 
